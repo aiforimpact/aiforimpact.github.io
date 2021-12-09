@@ -1,3 +1,3 @@
-# MIT Vaccine Website
+# MIT AI For Imapact (MAS.664, MAS.665)
 
-This repo has the source code for the pandemic.mit.edu website.
+This repo has the source code for the MIT AI for Impact/ Global Venture Class.
