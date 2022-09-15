@@ -1422,13 +1422,12 @@
 
 
 
-
   <div class="container">
     <div class="copyright">
     <center>
     <br>
     <p style="color: white">
-    Images from Spring 2022 Demo Day at the Media Lab, © John Werner
+    Images from Fall 2022 MIT/Harvard Course Meetup @Link Ventures, © John Werner
     </p>
     </center>
     </div>
@@ -1438,32 +1437,29 @@
   <section>
 
   <div class="w3-content w3-section" style="max-width:1920px">
-    <img class="mySlides" src="assets/img/photos/1.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/2.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/3.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/4.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/5.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/6.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/7.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/8.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/9.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/10.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/11.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/12.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/13.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/14.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/15.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/16.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/17.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/18.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/19.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/20.jpg" style="width:100%">
-    <img class="mySlides" src="assets/img/photos/21.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/1.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/2.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/3.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/4.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/5.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/6.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/7.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/8.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/9.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/10.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/11.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/12.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/13.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/14.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/15.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/16.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/17.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/18.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/19.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/20.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/photos2/21.jpg" style="width:100%">
 
   </div>
-
-
-
 
 
 
@@ -1489,6 +1485,11 @@
 
 
 
+
+
+
+
+
     <div class="container">
       <div class="copyright">
       <center>
@@ -1503,6 +1504,42 @@
     <div>
       <iframe src="https://www.slideshare.net/slideshow/embed_code/key/tRJNYfQ0wkkEVf?hostedIn=slideshare&page=upload" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+
+
+
 
 
 
