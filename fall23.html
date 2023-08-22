@@ -1554,8 +1554,22 @@
 
 
 
+    <script>
+    var myIndex = 0;
+    carousel();
 
-
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
 
 
 
@@ -1565,25 +1579,32 @@
       <center>
       <br>
       <p style="color: white">
-      Slides from Spring 2022 Demo Day at the Media Lab
+      Slides from Spring 2023 Demo Day at the Media Lab
       </p>
       </center>
       </div>
     </div>
 
     <div>
-      <iframe src="https://www.slideshare.net/slideshow/embed_code/key/tRJNYfQ0wkkEVf?hostedIn=slideshare&page=upload" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <iframe src="https://www.slideshare.net/slideshow/embed_code/key/MzlX6AnfRx208j?hostedIn=slideshare&page=upload" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+      
+    
+    <div class="container">
+      <div class="copyright">
+      <center>
+      <br>
+      <p style="color: white">
+      Spring 2023 Demo Day at the Media Lab
+      </p>
+      </center>
+      </div>
     </div>
 
 
-
-
-
-
-
-
-
-
+    <div>
+      <iframe width="100%" height="600" src="https://www.youtube.com/embed/71A8PN-z1rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
 
 
@@ -1605,17 +1626,6 @@
       </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <div class="container">
       <div class="copyright">
       <center>
@@ -1632,7 +1642,7 @@
       <iframe width="100%" height="600" src="https://www.youtube.com/embed/BEav6MIjmyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-
+<!-- 
 
     <div class="container">
       <div class="copyright">
@@ -1648,7 +1658,7 @@
 
     <div>
       <iframe width="100%" height="600" src="https://www.youtube.com/embed/CjyNNBUVIJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    </div> -->
 
 
 
