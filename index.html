@@ -1,215 +1,946 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.6">
-  <style type="text/css">
-    body {background-color: #131313}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Helvetica; color: #23252a; -webkit-text-stroke: #23252a; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 18.0px 0.0px; text-align: center; line-height: 30.0px; font: 20.0px Helvetica; color: #3d3d3d; -webkit-text-stroke: #3d3d3d; min-height: 24.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 14.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Helvetica; color: #23252a; -webkit-text-stroke: #23252a; min-height: 14.0px}
-    p.p6 {margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p8 {margin: 0.0px 0.0px 30.0px 0.0px; line-height: 18.0px; font: 12.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Helvetica; color: #900f28; -webkit-text-stroke: #900f28; background-color: #f1f5ff; min-height: 14.0px}
-    p.p12 {margin: 0.0px 30.0px 10.0px 30.0px; text-align: center; line-height: 18.0px; font: 12.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p13 {margin: 0.0px 30.0px 10.0px 30.0px; text-align: center; line-height: 16.5px; font: 11.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 21.0px; font: 14.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 14.0px Helvetica; color: #eaeaea; -webkit-text-stroke: #eaeaea; min-height: 17.0px}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 19.5px; font: 13.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    span.s1 {font-kerning: none; background-color: #ffffff}
-    span.s2 {font-kerning: none; background-color: #fec7c8}
-    span.s3 {font-kerning: none}
-    span.s4 {font-kerning: none; background-color: #900f28}
-    span.s5 {font: 12.0px Helvetica; font-kerning: none; color: #23252a; background-color: #fec7c8; -webkit-text-stroke: 0px #23252a}
-    span.s6 {font: 14.0px Helvetica; font-kerning: none; color: #ffffff; background-color: #900f28; -webkit-text-stroke: 0px #ffffff}
-    span.s7 {font-kerning: none; background-color: #7b1327}
-    span.s8 {font-kerning: none; background-color: #f1f5ff}
-    span.s9 {font-kerning: none; background-color: rgba(8, 11, 26, 0.76)}
-    span.s10 {font: 12.0px Helvetica; font-kerning: none}
-    span.s11 {font: 11.0px Helvetica; font-kerning: none}
-    span.s12 {font-kerning: none; color: #eaeaea; background-color: #900f28; -webkit-text-stroke: 0px #eaeaea}
-    span.s13 {text-decoration: underline ; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s14 {font-kerning: none; color: #d5d5d5; background-color: #900f28; -webkit-text-stroke: 0px #d5d5d5}
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AI and Web3 for Impact: Venture studio, MIT class</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/mit.png">
+    <link href="assets/img/mit.png" rel="apple-touch-icon">
+
+    <meta name="title" content="AI Web3 VentureStudio @ MIT">
+    <meta name="description"
+      content="AI Web3 VentureStudio @ MIT">
+    <meta property="og:image" content="assets/images/header.jpg">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Flickity CSS File -->
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GF1FRVH53P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GF1FRVH53P');
+</script>
+    <!-- =======================================================
+  * Template Name: TheEvent - v2.2.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+<script>
+  function hideSnackbar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+    var link = document.getElementById("snackbar-link");
+    // Add the "show" class to DIV
+    x.className = "hide";
+    link.setAttribute("style", "visibility:hidden")
+
+  }
+</script>
+
 <body>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span></span></p>
-<h1 style="margin: 0.0px 0.0px 6.0px 0.0px; text-align: center; line-height: 40.8px; font: 34.0px Helvetica; color: #900f28; -webkit-text-stroke: #900f28"><span class="s2"><b>AI FOR IMPACT: VENTURE STUDIO</b></span></h1>
-<p class="p3"><span class="s3"><b></b></span><br></p>
-<p class="p4"><span class="s4"><a href="file:///Users/clu/repos/aiforimpact.github.io/spring24.html">Spring 2024</a></span><span class="s5"> <a href="file:///Users/clu/repos/aiforimpact.github.io/fall23.html"><span class="s6">Fall 2023</span></a> <a href="file:///Users/clu/repos/aiforimpact.github.io/spring23.html"><span class="s6">Spring 2023</span></a> <a href="file:///Users/clu/repos/aiforimpact.github.io/fall.html"><span class="s6">Fall 2022</span></a> <a href="file:///Users/clu/repos/aiforimpact.github.io/spring.html"><span class="s6">Spring 2022</span></a><span class="Apple-converted-space"> </span></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p6"><span class="s3">Welcome to MIT AI Venture Studio<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s3"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; line-height: 28.8px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s7"><b>Overview</b></span></h2>
-<p class="p8"><span class="s7">Join our AI for Impact: Venture Studio class. This course focuses on opportunities in the broad sectors of digital health, climate change, and mobility, with data- and AI-centric technologies such as blockchain, Web3, and privacy tech, which can accelerate major positive impact worldwide. Mentors consisting of CEOs, VCs, and academics work with student teams throughout the course. Students develop business plans suitable for real-world impact, which are eligible for seed funding dependent on judges' scores from demo day during the final class. </span><span class="s3"><br>
-<br>
-</span><span class="s7">Click the Spring 2024 button above to join the Spring 2024 class, MAS.664 AI for Impact: Venture Studio.<span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; line-height: 43.2px; font: 36.0px Helvetica; color: #131313; -webkit-text-stroke: #131313"><span class="s8"><b>Speakers &amp; Mentors</b></span></h2>
-<p class="p10"><span class="s3"><a href="https://www.media.mit.edu/people/sandy/overview/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.media.mit.edu/people/sandy/overview/"><b>Alex 'Sandy' Pentland</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p12"><span class="s9"><a href="https://www.media.mit.edu/people/sandy/overview/"><i>MIT Media Lab</i><span class="s10"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/vinod-khosla-65387416/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/vinod-khosla-65387416/"><b>Vinod Khosla</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/vinod-khosla-65387416/"><i>Khosla Ventures</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/englishpaulm/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/englishpaulm/"><b>Paul English</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/englishpaulm/"><i>Boston Venture Studio</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/jasonpontin/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/jasonpontin/"><b>Jason Pontin</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/jasonpontin/"><i>DCVC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/reedsturtevant/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/reedsturtevant/"><b>Reed Sturtevant</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/reedsturtevant/"><i>The Engine</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/bzuberi/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/bzuberi/"><b>Bilal Zuberi</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/bzuberi/"><i>Lux Capital</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/stevejurvetson/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/stevejurvetson/"><b>Steve Jurvetson</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/stevejurvetson/"><i>Future Ventures</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.media.mit.edu/people/c10n/overview/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.media.mit.edu/people/c10n/overview/"><b>Calvin Chin</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.media.mit.edu/people/c10n/overview/"><i>E14 Fund</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/ericchen"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/ericchen"><b>Eric Chen</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/ericchen"><i>OVO Fund</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/michal-gilon-yanai-993812/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/michal-gilon-yanai-993812/"><b>Michal Gilon-Yanai</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/michal-gilon-yanai-993812/"><i>Two Lanterns VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="http://mobility.mit.edu/people/jinhua-zhao"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="http://mobility.mit.edu/people/jinhua-zhao"><b>Jinhua Zhao</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="http://mobility.mit.edu/people/jinhua-zhao"><i>MIT City and Transportation Planning</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.csail.mit.edu/person/daniela-rus"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.csail.mit.edu/person/daniela-rus"><b>Daniela Rus</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.csail.mit.edu/person/daniela-rus"><i>CSAIL, MIT</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.media.mit.edu/people/hhaddad/overview/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.media.mit.edu/people/hhaddad/overview/"><b>Habib Haddad</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.media.mit.edu/people/hhaddad/overview/"><i>E14 Fund</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.media.mit.edu/people/narula/overview/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.media.mit.edu/people/narula/overview/"><b>Neha Narula</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.media.mit.edu/people/narula/overview/"><i>Digital Currency Initiative</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.threshold.vc/team/mohammad-mo-islam/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.threshold.vc/team/mohammad-mo-islam/"><b>Mohammad (Mo) Islam</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.threshold.vc/team/mohammad-mo-islam/"><i>Threshold VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://rdas.co/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://rdas.co/"><b>Riddhiman Das</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://rdas.co/"><i>TripleBlind</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/ronniemrtnz/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/ronniemrtnz/"><b>Ronnie Martinez</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/ronniemrtnz/"><i>CEAS Investments</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/santanub/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/santanub/"><b>Santanu Bhattacharya</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/santanub/"><i>Airtel X Labs</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/dscottphoenix/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/dscottphoenix/"><b>Scott Phoenix</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/dscottphoenix/"><i>Vicarious</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://hardjono.mit.edu/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://hardjono.mit.edu/"><b>Thomas Hardjono</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://hardjono.mit.edu/"><i>MIT Connection Science</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.ey.com/en_us/people/jeffrey-saviano2"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.ey.com/en_us/people/jeffrey-saviano2"><b>Jeffrey Saviano</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.ey.com/en_us/people/jeffrey-saviano2"><i>EY Global Tax Innovation Leader</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="file:///Users/clu/repos/aiforimpact.github.io/www.DavidShrier.com"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="file:///Users/clu/repos/aiforimpact.github.io/www.DavidShrier.com"><b>David Shrier</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="file:///Users/clu/repos/aiforimpact.github.io/www.DavidShrier.com"><i>Imperial College Business School</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/annakoscielecka/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/annakoscielecka/"><b>Anna Koscielecka</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/annakoscielecka/"><i>Two Lanterns VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/david-blundin/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/david-blundin/"><b>David Blundin</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/david-blundin/"><i>Link Ventures</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/johnwerner1/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/johnwerner1/"><b>John Werner</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/johnwerner1/"><i>Link Ventures</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/ebport/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/ebport/"><b>Elizabeth Beth Porter</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/ebport/"><i>MIT Media Lab</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="http://www.mit.edu/~fadel/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="http://www.mit.edu/~fadel/"><b>Fadel Adib</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="http://www.mit.edu/~fadel/"><i>MIT Media Lab</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/jharthorne/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/jharthorne/"><b>John Harthorne</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/jharthorne/"><i>Two Lanterns VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/lakshmisimhan/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/lakshmisimhan/"><b>Lakshminarasimhan Srinivasan</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/lakshmisimhan/"><i>TCS</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/satra/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/satra/"><b>Satrajit Ghosh</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/satra/"><i>MIT</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/dkraft/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/dkraft/"><b>Daniel Kraft</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/dkraft/"><i>XPRIZE</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/graceisford/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/graceisford/"><b>Grace Isaford</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/graceisford/"><i>Lux Capital</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/patricia-geli-0a32633/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/patricia-geli-0a32633/"><b>Patricia Geli</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/patricia-geli-0a32633/"><i>Harvard</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/dulude/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/dulude/"><b>Richard Dulude</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/dulude/"><i>Underscore VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/grahamdodge/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/grahamdodge/"><b>Graham Dodge</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/grahamdodge/"><i>PathCheck Foundation</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/umararshad1/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/umararshad1/"><b>Umar Arshad</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/umararshad1/"><i>Matiria</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/susangarfield/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/susangarfield/"><b>Susan Garfield</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/susangarfield/"><i>EY</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/robert-s-fisher/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/robert-s-fisher/"><b>Rob Fisher</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/robert-s-fisher/"><i>Cogo Labs</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/stashpomichter/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/stashpomichter/"><b>Stash Pomichter</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/stashpomichter/"><i>Oculo AI</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/jamiegoldstein1/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/jamiegoldstein1/"><b>Jamie Goldstein</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/jamiegoldstein1/"><i>Pillar VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.pillar.vc/team/parker-mckee/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.pillar.vc/team/parker-mckee/"><b>Parker McKee</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.pillar.vc/team/parker-mckee/"><i>Pillar VC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/deb-hordon-ph-d-0765b/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/deb-hordon-ph-d-0765b/"><b>Deb Hordon</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/deb-hordon-ph-d-0765b/"><i>Cultivating Greatness LLC</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/joan-larovere/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/joan-larovere/"><b>Joan LaRovere</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/joan-larovere/"><i>Harvard Medical School, iSelect Fund</i><span class="s11"><i></i></span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; line-height: 43.2px; font: 36.0px Helvetica; color: #131313; -webkit-text-stroke: #131313"><span class="s8"><b>Instructors</b></span></h2>
-<p class="p10"><span class="s3"><a href="https://www.media.mit.edu/people/raskar/overview/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.media.mit.edu/people/raskar/overview/"><b>Ramesh Raskar</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.media.mit.edu/people/raskar/overview/"><i>MIT Media Lab</i><span class="s11"><i></i></span></a></span></p>
-<p class="p10"><span class="s3"><a href="https://www.linkedin.com/in/sazim/"></a></span><br></p>
-<h3 style="margin: 0.0px 0.0px 5.0px 0.0px; text-align: center; line-height: 18.0px; font: 15.0px Arial; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s9"><a href="https://www.linkedin.com/in/sazim/"><b>Shahid Azim</b><span class="s3"><b></b></span></a></span></h3>
-<p class="p13"><span class="s9"><a href="https://www.linkedin.com/in/sazim/"><i>MIT</i><span class="s11"><i></i></span></a></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p6"><span class="s3">Images from Fall 2022 MIT/Harvard Course Meetup @Link Ventures, © John Werner<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">                     </span></span></p>
-<p class="p14"><span class="s12">Contact: <a href="mailto:jpbonsen@mit.edu"><span class="s13">jpbonsen@mit.edu</span></a>, <a href="mailto:vvsharma@media.mit.edu"><span class="s13">vvsharma@media.mit.edu</span></a><span class="Apple-converted-space"> </span></span></p>
-<p class="p15"><span class="s3"></span><br></p>
-<p class="p16"><span class="s14">Based off <a href="https://bootstrapmade.com/"><span class="s13">BootstrapMade</span></a><span class="Apple-converted-space"> </span></span></p>
-<p><span>
-By attending the class or participating in the demo day, you consent to the possibility of your photo or video appearing in privately or publicly posted material. Please be aware that images or footage captured during the event may be used for educational, promotional or informational purposes. If you have any concerns regarding the use of your image, please reach out to to discuss further. Thank you for your understanding and cooperation.
 
-============
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
 
-Confidentiality Notice
-======
-We are bringing to your attention issues regarding confidentiality and IP of your work. This has not been an issue in the past and we expect all class work to be not confidential. Class work of students is shared with each other to keep the highly collaborative atmosphere. The demo day is similar to MIT $100K or YCombinator demo day where all presentations are recorded and posted online.
- 
-For Class Presentations and Demo Day, it is essential to understand that intellectual property protection is the responsibility of each team presenting. Teams should refrain from revealing any information that could expose unprotected IP. It is crucial to operate under the assumption that all work showcased may become publicly visible, and no confidentiality should be assumed. To safeguard sensitive information, teams should exercise caution in their presentations, avoid disclosing proprietary details that are not adequately protected, and focus on highlighting their projects value proposition, traction, and potential for growth without compromising critical IP assets. By being mindful of what is shared and ensuring that only non-sensitive information is presented, teams can navigate Class Presentations and Demo Day effectively while protecting their intellectual property.
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#intro"><span></span></a></h1> -->
+        <a href="index.html" class="scrollto"><img src="assets/img/mit_.png" alt="MIT" title=""></a>
+        <a href="https://www.media.mit.edu/groups/camera-culture/overview/" class="scrollto"><img src="assets/img/cc.png" alt="CC" title=""></a>
+        <a href="https://connection.mit.edu/" class="scrollto"><img src="assets/img/connection_science.png" alt="Connection Science" title=""></a>
+        <a href="https://www.csail.mit.edu/" class="scrollto"><img src="assets/img/CSAIL_logo.png" alt="CSAIL" title=""></a>
+        <a href="https://lids.mit.edu/" class="scrollto"><img src="assets/img/LIDS_logo.png" alt="LIDS" title=""></a>
+      </div>
 
-Your work in shared documents is shared only with other class participants and mentors. We also discourage visitors from taking photos of your class presentations. However, there is always a chance of a leak and we cannot guarantee that the information will not become available to those outside the class at some point. Hence we strongly encourage you to not share anything confidential during class work or on demo day.
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
 
-Contact us if you have any questions.
+  <!--
+    <div id="snackbar" class="show" >
+      <div id="x" onclick="hideSnackbar()">x</div>
+      <a id="snackbar-link" href="#agenda">Upcoming Event on January 19</a>
+    </div> -->
 
-======= 
-</span>
-</p>
+
+  <!-- ======= Intro Section ======= -->
+  <section id="intro">
+    <div class="intro-container" data-aos-delay="100">
+      <h1 class="mb-2 pb-0"><span style="color: #A31F34">AI for Impact: Venture Studio</span></h1>
+      <p id="sub-heading" class="mb-4 pb-0"></p>
+
+
+
+      <div>
+        <a href="./spring24.html" class="about-btn-2">Spring 2024</a>
+        <a href="./fall23.html" class="about-btn-2">Fall 2023</a>
+        <a href="./spring23.html" class="about-btn-2">Spring 2023</a>
+        <a href="./fall.html" class="about-btn-2">Fall 2022</a>
+        <a href="./spring.html" class="about-btn-2">Spring 2022</a>
+      </div>
+      <br>
+      <br>
+    </div>
+  </section><!-- End Intro Section -->
+
+
+
+    <div class="container">
+      <div class="copyright">
+      <center>
+      <br>
+      <p style="color: white">
+      Welcome to MIT AI Venture Studio
+      </p>
+      </center>
+      </div>
+    </div>
+
+
+    <div>
+      <iframe width="100%" height="600" src="https://www.youtube.com/embed/2J39BS48X14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+  <main id="main">
+    <section id="coordination" class="section-with-bg">
+      <div class="container" id="overview">
+        <div class="section-header-inv">
+          <h2 style="font-size:xx-large">Overview</h2>
+        </div>
+        <div class="tab-content row justify-content-center" data-aos-delay="700">
+        <p style="color: white">
+
+          Join our AI for Impact: Venture Studio class.
+	  This course focuses on opportunities in the broad sectors of digital health, climate change, and mobility, with data- and AI-centric technologies such as blockchain, Web3, and privacy tech, which can accelerate major positive impact worldwide.
+          Mentors consisting of CEOs, VCs, and academics work with student teams throughout the course.
+          Students develop business plans suitable for real-world impact, which are eligible for seed funding dependent on judges' scores from demo day during the final class.
+          <br>
+          <br>
+          Click the Spring 2024 button above to join the Spring 2024 class, MAS.664 AI for Impact: Venture Studio.
+
+
+        </p>
+        <!--
+        <ul style="font-size:0.85rem; padding-right: 8rem;">
+            <li>...</li>
+            <li>...</li>
+          </ul>
+          <p style="color: white"> ...
+          </p>
+        -->
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <div id="vaccines-for-all">
+      <!-- ======= agenda Section =======  -->
+      <section id="speakers" class="section-with-bg">
+        <div class="container">
+          <div class="section-header">
+            <h2 style="color: #191919">Speakers & Mentors</h2>
+          </div>
+          <div class="row justify-content-center speaker-row" style="margin:auto">
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width: 85%">
+              <a href="https://www.media.mit.edu/people/sandy/overview/">
+                <div class="speaker2">
+                  <img src="assets/img/speakers/sandy.jpeg" alt="Alex 'Sandy' Pentland" style="width: 100%;">
+                  <div class="details">
+                    <h3>Alex 'Sandy' Pentland</h3>
+                    <p>MIT Media Lab</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/vinod-khosla-65387416/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Vinod_Khosla.jpeg" alt="Vinod Khosla" style="width: 100%;">
+                  <div class="details">
+                    <h3>Vinod Khosla</h3>
+                    <p>Khosla Ventures</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/englishpaulm/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Paul_English.jpeg" alt="Paul English" style="width: 100%;">
+                  <div class="details">
+                    <h3>Paul English</h3>
+                    <p>Boston Venture Studio</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/jasonpontin/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Jason_Pontin.jpeg" alt="Jason Pontin" style="width: 100%;">
+                  <div class="details">
+                    <h3>Jason Pontin</h3>
+                    <p>DCVC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/reedsturtevant/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Reed_Sturtevant.jpeg" alt="Reed Sturtevant" style="width: 100%;">
+                  <div class="details">
+                    <h3>Reed Sturtevant</h3>
+                    <p>The Engine</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/bzuberi/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Bilal_Zuberi.jpeg" alt="Bilal Zuberi" style="width: 100%;">
+                  <div class="details">
+                    <h3>Bilal Zuberi</h3>
+                    <p>Lux Capital</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/stevejurvetson/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Steve_Jurvetson.jpeg" alt="Steve Jurvetson" style="width: 100%;">
+                  <div class="details">
+                    <h3>Steve Jurvetson</h3>
+                    <p>Future Ventures</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.media.mit.edu/people/c10n/overview/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Calvin_Chin.jpeg" alt="Calvin Chin" style="width: 100%;">
+                  <div class="details">
+                    <h3>Calvin Chin</h3>
+                    <p>E14 Fund</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/ericchen">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Eric_Chen.jpeg" alt="Eric Chen" style="width: 100%;">
+                  <div class="details">
+                    <h3>Eric Chen</h3>
+                    <p>OVO Fund</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/michal-gilon-yanai-993812/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Michal_Gilon-Yanai.jpeg" alt="Michal Gilon-Yanai" style="width: 100%;">
+                  <div class="details">
+                    <h3>Michal Gilon-Yanai</h3>
+                    <p>Two Lanterns VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="http://mobility.mit.edu/people/jinhua-zhao">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Jinhua_Zhao.png" alt="Jinhua Zhao" style="width: 100%;">
+                  <div class="details">
+                    <h3>Jinhua Zhao</h3>
+                    <p>MIT City and Transportation Planning</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.csail.mit.edu/person/daniela-rus">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Daniela_Rus.jpeg" alt="Daniela Rus" style="width: 100%;">
+                  <div class="details">
+                    <h3>Daniela Rus</h3>
+                    <p>CSAIL, MIT</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+           <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.media.mit.edu/people/hhaddad/overview/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Habib_Haddad.png" alt="Habib Haddad" style="width: 100%;">
+                  <div class="details">
+                    <h3>Habib Haddad</h3>
+                    <p>E14 Fund</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.media.mit.edu/people/narula/overview/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Neha_Narula.png" alt="Neha Narula" style="width: 100%;">
+                  <div class="details">
+                    <h3>Neha Narula</h3>
+                    <p>Digital Currency Initiative</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.threshold.vc/team/mohammad-mo-islam/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Mohammad_(Mo)_Islam.png" alt="Mohammad (Mo) Islam" style="width: 100%;">
+                  <div class="details">
+                    <h3>Mohammad (Mo) Islam</h3>
+                    <p>Threshold VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://rdas.co/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Riddhiman_Das.jpeg" alt="Riddhiman Das" style="width: 100%;">
+                  <div class="details">
+                    <h3>Riddhiman Das</h3>
+                    <p>TripleBlind</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/ronniemrtnz/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Ronnie_Martinez.jpeg" alt="Ronnie Martinez" style="width: 100%;">
+                  <div class="details">
+                    <h3>Ronnie Martinez</h3>
+                    <p>CEAS Investments</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/santanub/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Santanu_Bhattacharya.jpeg" alt="Santanu Bhattacharya" style="width: 100%;">
+                  <div class="details">
+                    <h3>Santanu Bhattacharya</h3>
+                    <p>Airtel X Labs</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/dscottphoenix/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Scott_Phoenix.jpeg" alt="Scott Phoenix" style="width: 100%;">
+                  <div class="details">
+                    <h3>Scott Phoenix</h3>
+                    <p>Vicarious</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://hardjono.mit.edu/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Thomas_Hardjono.jpeg" alt="Thomas Hardjono" style="width: 100%;">
+                  <div class="details">
+                    <h3>Thomas Hardjono</h3>
+                    <p>MIT Connection Science</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.ey.com/en_us/people/jeffrey-saviano2">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Jeffrey_Saviano.jpeg" alt="Jeffrey Saviano" style="width: 100%;">
+                  <div class="details">
+                    <h3>Jeffrey Saviano</h3>
+                    <p>EY Global Tax Innovation Leader</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="www.DavidShrier.com">
+                <div class="speaker">
+                  <img src="assets/img/speakers/David_Shrier.jpeg" alt="David Shrier" style="width: 100%;">
+                  <div class="details">
+                    <h3>David Shrier</h3>
+                    <p>Imperial College Business School</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/annakoscielecka/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Anna_Koscielecka.jpeg" alt="Anna Koscielecka" style="width: 100%;">
+                  <div class="details">
+                    <h3>Anna Koscielecka</h3>
+                    <p>Two Lanterns VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/david-blundin/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/David_Blundin.jpeg" alt="David Blundin" style="width: 100%;">
+                  <div class="details">
+                    <h3>David Blundin</h3>
+                    <p>Link Ventures</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/johnwerner1/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/John_Werner.jpeg" alt="John Werner" style="width: 100%;">
+                  <div class="details">
+                    <h3>John Werner</h3>
+                    <p>Link Ventures</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/ebport/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Elizabeth_Beth_Porter.jpeg" alt="Elizabeth Beth Porter" style="width: 100%;">
+                  <div class="details">
+                    <h3>Elizabeth Beth Porter</h3>
+                    <p>MIT Media Lab</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="http://www.mit.edu/~fadel/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Fadel_Adib.jpeg" alt="Fadel Adib" style="width: 100%;">
+                  <div class="details">
+                    <h3>Fadel Adib</h3>
+                    <p>MIT Media Lab</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/jharthorne/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/John_Harthorne.jpeg" alt="John Harthorne" style="width: 100%;">
+                  <div class="details">
+                    <h3>John Harthorne</h3>
+                    <p>Two Lanterns VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/lakshmisimhan/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/Lakshminarasimhan_Srinivasan.jpeg" alt="Lakshminarasimhan Srinivasan" style="width: 100%;">
+                  <div class="details">
+                    <h3>Lakshminarasimhan Srinivasan</h3>
+                    <p>TCS</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/satra/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/satrajit.png" alt="Satrajit Ghosh" style="width: 100%;">
+                  <div class="details">
+                    <h3>Satrajit Ghosh</h3>
+                    <p>MIT</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/dkraft/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/dan_kraft.jpeg" alt="Daniel Kraft" style="width: 100%;">
+                  <div class="details">
+                    <h3>Daniel Kraft</h3>
+                    <p>XPRIZE</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/graceisford/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/grace_isaford.jpeg" alt="Grace Isaford" style="width: 100%;">
+                  <div class="details">
+                    <h3>Grace Isaford</h3>
+                    <p>Lux Capital</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/patricia-geli-0a32633/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/patricia_geli.jpeg" alt="Patricia Geli" style="width: 100%;">
+                  <div class="details">
+                    <h3>Patricia Geli</h3>
+                    <p>Harvard</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/dulude/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/richard_dulude.jpeg" alt="Richard Dulude" style="width: 100%;">
+                  <div class="details">
+                    <h3>Richard Dulude</h3>
+                    <p>Underscore VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/grahamdodge/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/graham_dodge.jpeg" alt="Graham Dodge" style="width: 100%;">
+                  <div class="details">
+                    <h3>Graham Dodge</h3>
+                    <p>PathCheck Foundation</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/umararshad1/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/umar_arshad.jpeg" alt="Umar Arshad" style="width: 100%;">
+                  <div class="details">
+                    <h3>Umar Arshad</h3>
+                    <p>Matiria</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/susangarfield/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/susan_garfield.jpeg" alt="Susan Garfield" style="width: 100%;">
+                  <div class="details">
+                    <h3>Susan Garfield</h3>
+                    <p>EY</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/robert-s-fisher/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/rob_fisher.jpeg" alt="Rob Fisher" style="width: 100%;">
+                  <div class="details">
+                    <h3>Rob Fisher</h3>
+                    <p>Cogo Labs</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/stashpomichter/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/stash_pomichter.jpeg" alt="Stash Pomichter" style="width: 100%;">
+                  <div class="details">
+                    <h3>Stash Pomichter</h3>
+                    <p>Oculo AI</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/jamiegoldstein1/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/jamie_goldstein.jpeg" alt="Jamie Goldstein" style="width: 100%;">
+                  <div class="details">
+                    <h3>Jamie Goldstein</h3>
+                    <p>Pillar VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.pillar.vc/team/parker-mckee/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/parker_mckee.jpg" alt="Parker McKee" style="width: 100%;">
+                  <div class="details">
+                    <h3>Parker McKee</h3>
+                    <p>Pillar VC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/deb-hordon-ph-d-0765b/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/deb_hordon.jpg" alt="Deb Hordon" style="width: 100%;">
+                  <div class="details">
+                    <h3>Deb Hordon</h3>
+                    <p>Cultivating Greatness LLC</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+              <a href="https://www.linkedin.com/in/joan-larovere/">
+                <div class="speaker">
+                  <img src="assets/img/speakers/joan_larovere.jpg" alt="Joan LaRovere" style="width: 100%;">
+                  <div class="details">
+                    <h3>Joan LaRovere</h3>
+                    <p>Harvard Medical School, iSelect Fund</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <section id="speakers" class="section-with-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2 style="color: #191919">Instructors</h2>
+        </div>
+        <div class="row justify-content-center speaker-row" style="margin:auto">
+
+          <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+            <a href="https://www.media.mit.edu/people/raskar/overview/">
+              <div class="speaker">
+                <img src="assets/img/speakers/ramesh.png" alt="Ramesh Raskar" style="width: 100%;">
+                <div class="details">
+                  <h3>Ramesh Raskar</h3>
+                  <p>MIT Media Lab</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+            <a href="https://www.linkedin.com/in/sazim/">
+              <div class="speaker">
+                <img src="assets/img/speakers/shahid_azim.jpg" alt="Shahid Azim" style="width: 100%;">
+                <div class="details">
+                  <h3>Shahid Azim</h3>
+                  <p>MIT</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+<!--           <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+            <a href="https://d-lab.mit.edu/about/people/joost-bonsen">
+              <div class="speaker">
+                <img src="assets/img/speakers/joost.jpeg" alt="Joost Paul Bonsen" style="width: 100%;">
+                <div class="details">
+                  <h3>Joost Paul Bonsen</h3>
+                  <p>MIT Media Lab</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6" style="width:85%">
+            <a href="https://www.linkedin.com/in/vivoutlaw/">
+              <div class="speaker">
+                <img src="assets/img/speakers/vivek.jpeg" alt="Vivek Sharma" style="width: 100%;">
+                <div class="details">
+                  <h3>Vivek Sharma</h3>
+                  <p>MIT Media Lab</p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+
+
+        </div>
+      </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="copyright">
+      <center>
+      <br>
+      <p style="color: white">
+      Images from Fall 2022 MIT/Harvard Course Meetup @Link Ventures, © John Werner
+      </p>
+      </center>
+      </div>
+    </div>
+
+    <!-- ======= Course images ======= -->
+    <section>
+
+    <div class="w3-content w3-section" style="max-width:1920px">
+      <img class="mySlides" src="assets/img/photos2/1.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/2.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/3.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/4.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/5.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/6.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/7.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/8.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/9.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/10.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/11.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/12.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/13.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/14.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/15.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/16.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/17.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/18.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/19.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/20.jpg" style="width:100%">
+      <img class="mySlides" src="assets/img/photos2/21.jpg" style="width:100%">
+
+    </div>
+
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+
+
+
+    </section>
+
+
+
+
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+
+      <div class="copyright">
+        Contact: <a href="mailto:jpbonsen@mit.edu" style="color: white; text-decoration: underline;">jpbonsen@mit.edu</a>, <a href="mailto:vvsharma@media.mit.edu" style="color: white; text-decoration: underline;">vvsharma@media.mit.edu</a>
+      <br>
+      <!-- <strong>This event is supported by the National Science Foundation (NSF) and the National Institute of Standards and Technology (NIST)</strong> -->
+        <!-- &copy; Copyright <strong>Trusted Pandemic Technologies</strong>. All Rights Reserved. -->
+      </div><br>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Based off <a href="https://bootstrapmade.com/" style="text-decoration: underline; color:white">BootstrapMade</a>
+      </div>
+
+	<div class="consent notice">
+	<p><span>
+	By attending the class or participating in the demo day, you consent to the possibility of your photo or video appearing in privately or publicly posted material. Please be aware that images or footage captured during the event may be used for educational, promotional or informational purposes. If you have any concerns regarding the use of your image, please reach out to to discuss further. Thank you for your understanding and cooperation.
+
+	============
+
+	Confidentiality Notice
+	======
+	We are bringing to your attention issues regarding confidentiality and IP of your work. This has not been an issue in the past and we expect all class work to be not confidential. Class work of students is shared with each other to keep the highly collaborative atmosphere. The demo day is similar to MIT $100K or YCombinator demo day where all presentations are recorded and posted online.
+	 
+	For Class Presentations and Demo Day, it is essential to understand that intellectual property protection is the responsibility of each team presenting. Teams should refrain from revealing any information that could expose unprotected IP. It is crucial to operate under the assumption that all work showcased may become publicly visible, and no confidentiality should be assumed. To safeguard sensitive information, teams should exercise caution in their presentations, avoid disclosing proprietary details that are not adequately protected, and focus on highlighting their projects value proposition, traction, and potential for growth without compromising critical IP assets. By being mindful of what is shared and ensuring that only non-sensitive information is presented, teams can navigate Class Presentations and Demo Day effectively while protecting their intellectual property.
+
+	Your work in shared documents is shared only with other class participants and mentors. We also discourage visitors from taking photos of your class presentations. However, there is always a chance of a leak and we cannot guarantee that the information will not become available to those outside the class at some point. Hence we strongly encourage you to not share anything confidential during class work or on demo day.
+
+	Contact us if you have any questions.
+
+	======= 
+	</span>
+	</p>
+	</div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/superfish/superfish.min.js"></script>
+  <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Flickity JS File -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
