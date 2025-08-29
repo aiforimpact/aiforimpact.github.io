@@ -156,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 25px);
 }
 
+.section-header.no-bar::before {
+  content: none !important;
+}
+
 .section-header-inv h2 {
   font-size: 36px;
   /* text-transform: uppercase; */
