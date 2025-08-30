@@ -2737,6 +2737,21 @@ SETTINGS
   color: white;
 }
 
+.schedule-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 13pt;
+  text-decoration: underline;
+}
+
+.schedule-link .icon {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); /* makes the SVG appear white */
+}
+
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
