@@ -234,21 +234,49 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 14px;
   margin: 0;
-  padding: 8px 0;
+  padding: 0;
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
+  position: relative;
 }
 
 #header #logo h1 span {
   color: #A31F34;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
-  color: rgba(50, 50, 50, 0.8);
+#header #logo h1 a {
+  padding: 8px;
   text-decoration: none;
+  display: inline-block;
+  color: rgba(50, 50, 50, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  outline: none;
+}
+
+#header #logo h1 a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #A31F34;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#header #logo h1 a:hover {
+  color: #191919;
+}
+
+#header #logo h1 a:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 #header #logo img {
