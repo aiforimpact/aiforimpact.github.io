@@ -189,6 +189,16 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
 }
 
+#header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #logo.pull-left {
+  float: none;
+}
+
 @media (max-width: 991px) {
   #header {
     background: white;
@@ -222,14 +232,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  font-size: 14px;
   margin: 0;
-  padding: 6px 0;
+  padding: 8px 0;
   line-height: 1;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: lowercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 #header #logo h1 span {
@@ -237,7 +247,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #191919;
+  color: rgba(50, 50, 50, 0.8);
+  text-decoration: none;
 }
 
 #header #logo img {
@@ -307,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  float: none;
   margin: 0;
 }
 
@@ -383,6 +394,29 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
+.nav-menu li.apply-btn a {
+  color: #fff;
+  background: #A31F34;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #A31F34;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.nav-menu li.apply-btn a:hover {
+  background: none;
+  color: #A31F34;
+}
+
+.nav-menu li.apply-btn:hover a:before, .nav-menu li.apply-btn.menu-active a:before {
+  visibility: hidden;
+}
+
 .nav-menu ul {
   margin: 4px 0 0 0;
   padding: 10px;
@@ -397,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #060c22;
+  color: #fff;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -407,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li:hover > a {
   background: #A31F34;
-  color: #191919;
+  color: #fff;
 }
 
 .nav-menu ul ul {
@@ -647,7 +681,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     height:2.5em;
   }
   #header #logo h1 {
-    font-size: 25px;
+    font-size: 14px;
   }
   .powered {
     height: 25px;
