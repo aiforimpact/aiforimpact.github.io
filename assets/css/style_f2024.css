@@ -449,6 +449,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* Override: prevent menu-active dark color from bleeding into dropdown items */
+.nav-menu .menu-active ul li a {
+  color: #fff;
+}
+
 .nav-menu ul ul {
   margin: 0;
 }
