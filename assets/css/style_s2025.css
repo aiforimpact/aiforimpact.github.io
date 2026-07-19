@@ -1919,13 +1919,17 @@ Secondary Speakers Section
 }
 
 .studio-panel ul,
-.studio-panel-dark ul {
+.studio-panel ol,
+.studio-panel-dark ul,
+.studio-panel-dark ol {
   padding-left: 20px;
   margin-bottom: 0;
 }
 
 .studio-panel p + ul,
-.studio-panel-dark p + ul {
+.studio-panel p + ol,
+.studio-panel-dark p + ul,
+.studio-panel-dark p + ol {
   margin-top: 14px;
 }
 
