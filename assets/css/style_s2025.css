@@ -1918,6 +1918,10 @@ Secondary Speakers Section
   line-height: 1.55;
 }
 
+.studio-paragraph-list p + p {
+  margin-top: 8px;
+}
+
 .studio-panel ul,
 .studio-panel ol,
 .studio-panel-dark ul,
