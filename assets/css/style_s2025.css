@@ -2394,23 +2394,199 @@ Secondary Speakers Section
   color: #5f1725;
 }
 
-#coordination.studio-course-outline .studio-kicker {
+.fall26-page .studio-admissions-section,
+.fall26-page .studio-projects-section,
+.fall26-page .studio-background-section {
+  background: #fff;
+}
+
+.fall26-page .studio-neutral-section,
+.fall26-page .studio-team-section,
+.fall26-page .studio-faq-section {
+  background: #f7f6f2;
+}
+
+.fall26-page .studio-admissions-section,
+.fall26-page .studio-neutral-section,
+.fall26-page .studio-projects-section,
+.fall26-page .studio-background-section,
+.fall26-page .studio-faq-section {
+  padding-bottom: 68px;
+  padding-top: 68px;
+}
+
+.fall26-page .studio-panel {
+  background: #fff;
+  border: 1px solid #dedbd4;
+  border-top: 3px solid #A31F34;
+  box-shadow: 0 8px 24px rgba(31, 35, 40, 0.055);
+  color: #26282b;
+  padding: 24px 26px;
+}
+
+.fall26-page .studio-panel h3 {
+  color: #722334;
+  line-height: 1.35;
+}
+
+.fall26-page .studio-panel p,
+.fall26-page .studio-panel li {
+  color: #363a3f;
+  line-height: 1.62;
+}
+
+.fall26-page .studio-details {
+  background: #fff;
+  border: 1px solid #dedbd4;
+  box-shadow: 0 6px 18px rgba(31, 35, 40, 0.04);
+}
+
+.fall26-page .studio-details summary {
+  color: #8f2438;
+}
+
+.fall26-page .studio-course-outline .studio-copy-dark,
+.fall26-page .studio-projects-section .studio-copy-dark {
   font-size: 1rem;
-  line-height: 1.55;
-  max-width: 960px;
-  margin-bottom: 24px;
+  max-width: 820px;
 }
 
-#coordination.studio-course-outline .studio-panel-dark h3 {
-  font-size: 1.05rem;
-  line-height: 1.3;
-  margin-bottom: 10px;
+.fall26-page .studio-projects-section .studio-details {
+  margin-top: 10px;
 }
 
-#coordination.studio-course-outline .studio-panel-dark li {
-  font-size: 0.94rem;
-  line-height: 1.48;
-  margin-bottom: 7px;
+#speakers.studio-team-section {
+  background: #f7f6f2;
+  padding: 68px 0 58px;
+}
+
+#speakers.studio-team-section .speaker {
+  background: #fff;
+  border: 1px solid #dedbd4;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(31, 35, 40, 0.055);
+}
+
+#speakers.studio-team-section .speaker img {
+  height: 270px;
+}
+
+#speakers.studio-team-section .speaker .details {
+  background: #fff;
+  padding: 14px 12px 13px;
+  position: static;
+}
+
+#speakers.studio-team-section .speaker .details h3 {
+  color: #722334;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+#speakers.studio-team-section .speaker .details p {
+  color: #555a61;
+  font-size: 0.78rem;
+  font-style: normal;
+  margin: 0;
+}
+
+#speakers.studio-team-section .studio-ta-card {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dedbd4;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(31, 35, 40, 0.045);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: auto;
+  max-width: 340px;
+  padding: 14px 18px;
+}
+
+#speakers.studio-team-section .studio-ta-card img {
+  border-radius: 8px;
+  height: 64px;
+  object-fit: cover;
+  width: 64px;
+}
+
+#speakers.studio-team-section .studio-ta-card h4,
+#speakers.studio-team-section .studio-ta-card p {
+  margin: 0;
+  text-align: left;
+}
+
+#speakers.studio-team-section .studio-ta-card h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#speakers.studio-team-section .studio-ta-card p {
+  color: #666;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+#speakers.studio-team-section .studio-ta-card a {
+  color: #722334;
+}
+
+.fall26-page .studio-background-section [data-aos-delay] > p {
+  color: #4c5056!important;
+  line-height: 1.65;
+  margin: 0 auto 24px;
+  max-width: 900px;
+  text-align: center;
+}
+
+.fall26-page .studio-faq-section .studio-grid {
+  margin-bottom: 0;
+}
+
+.fall26-page .studio-demo-archive {
+  background: #eef0f2;
+  padding: 68px 10%;
+}
+
+.fall26-page .studio-video-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fall26-page .studio-video-card {
+  background: #fff;
+  border: 1px solid #d9dce0;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(31, 35, 40, 0.055);
+  margin: 0;
+  overflow: hidden;
+}
+
+.fall26-page .studio-video-frame {
+  aspect-ratio: 16 / 9;
+  background: #191919;
+}
+
+.fall26-page .studio-video-frame iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.fall26-page .studio-video-card h3 {
+  color: #722334;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  padding: 15px 17px 17px;
 }
 
 .studio-table {
@@ -2450,6 +2626,18 @@ Secondary Speakers Section
   .studio-light-section,
   .studio-dark-section {
     padding: 50px 7% 30px;
+  }
+
+  .fall26-page .studio-demo-archive {
+    padding: 50px 7%;
+  }
+
+  .fall26-page .studio-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #speakers.studio-team-section .speaker img {
+    height: 250px;
   }
 
   #coordination.studio-overview {
