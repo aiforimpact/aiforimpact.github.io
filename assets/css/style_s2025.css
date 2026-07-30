@@ -2118,6 +2118,44 @@ Secondary Speakers Section
   text-align: center;
 }
 
+.studio-info-session {
+  align-items: center;
+  background: #f7f0f2;
+  border-left: 4px solid #a31f34;
+  border-radius: 4px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 22px 0 26px;
+  padding: 16px 18px;
+}
+
+.studio-info-session strong,
+.studio-info-session span {
+  display: block;
+}
+
+.studio-info-session strong {
+  color: #722334;
+  margin-bottom: 2px;
+}
+
+.studio-info-session span {
+  color: #4d4d4d;
+}
+
+.studio-info-session a {
+  color: #8f1d32;
+  flex: 0 0 auto;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.studio-info-session a:hover {
+  color: #5f1724;
+}
+
 .studio-note,
 .studio-note-dark {
   border-radius: 8px;
@@ -2403,6 +2441,12 @@ Secondary Speakers Section
 }
 
 @media (max-width: 768px) {
+  .studio-info-session {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .studio-light-section,
   .studio-dark-section {
     padding: 50px 7% 30px;
