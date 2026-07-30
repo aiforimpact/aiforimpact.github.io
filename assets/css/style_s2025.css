@@ -2213,53 +2213,147 @@ Secondary Speakers Section
 }
 
 #coordination.studio-overview {
-  padding-bottom: 48px;
+  background: #f7f6f2;
+  padding: 72px 10% 68px;
 }
 
 #coordination.studio-overview .section-header-inv {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+}
+
+#coordination.studio-overview .section-header-inv h2 {
+  color: #202124;
+}
+
+#coordination.studio-overview .section-header-inv::before {
+  background: #A31F34;
 }
 
 #coordination.studio-overview .studio-kicker {
-  font-size: 1rem;
-  line-height: 1.55;
-  max-width: 980px;
-  margin-bottom: 24px;
+  color: #4c5056;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 800px;
+  margin-bottom: 30px;
 }
 
 #coordination.studio-overview .studio-grid {
-  gap: 18px;
-  margin-bottom: 18px;
+  gap: 20px;
+  margin-bottom: 0;
 }
 
-#coordination.studio-overview .studio-panel-dark {
-  padding: 20px 22px;
+#coordination.studio-overview .studio-overview-intro-grid {
+  margin-bottom: 62px;
 }
 
-#coordination.studio-overview .studio-panel-dark h3 {
-  font-size: 1.05rem;
-  line-height: 1.3;
+#coordination.studio-overview .studio-overview-card {
+  background: #fff;
+  border: 1px solid #dedbd4;
+  border-top: 3px solid #A31F34;
+  box-shadow: 0 8px 24px rgba(31, 35, 40, 0.06);
+  color: #26282b;
+  padding: 24px 26px;
+}
+
+#coordination.studio-overview .studio-overview-card h3 {
+  color: #722334;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+#coordination.studio-overview .studio-overview-card p,
+#coordination.studio-overview .studio-overview-card li {
+  color: #363a3f;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+#coordination.studio-overview .studio-paragraph-list p + p {
+  margin-top: 12px;
+}
+
+#coordination.studio-overview .studio-fact {
+  align-items: start;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 92px minmax(0, 1fr);
+  padding: 11px 0;
+}
+
+#coordination.studio-overview .studio-fact + .studio-fact {
+  border-top: 1px solid #ece9e3;
+}
+
+#coordination.studio-overview .studio-fact strong {
+  color: #722334;
+  font-weight: 600;
+}
+
+#coordination.studio-overview .studio-fact span {
+  color: #363a3f;
+  line-height: 1.55;
+}
+
+#coordination.studio-overview .studio-subsection {
+  margin-top: 62px;
+}
+
+#coordination.studio-overview .studio-topics-heading-light {
+  color: #4c5056;
+  margin: 0 auto 24px;
+}
+
+#coordination.studio-overview .studio-topics-heading-light h3 {
+  color: #202124;
+  font-size: 1.55rem;
   margin-bottom: 10px;
 }
 
-#coordination.studio-overview .studio-panel-dark p,
-#coordination.studio-overview .studio-panel-dark li {
-  font-size: 0.94rem;
-  line-height: 1.48;
+#coordination.studio-overview .studio-topics-heading-light p {
+  color: #555a61;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 780px;
 }
 
-#coordination.studio-overview .studio-panel-dark li {
-  margin-bottom: 7px;
+#coordination.studio-overview .studio-applied-topics {
+  background: #eef0f2;
+  border: 1px solid #dfe2e5;
+  border-radius: 16px;
+  padding: 36px 32px 32px;
 }
 
-#coordination.studio-overview .studio-panel-dark ul {
-  padding-left: 18px;
+#coordination.studio-overview .studio-overview-note {
+  background: #fff2f4;
+  border: 1px solid #e5c5cc;
+  color: #323438;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-top: 38px;
+  padding: 24px 26px;
 }
 
-#coordination.studio-overview .studio-note-dark {
-  font-size: 0.94rem;
-  line-height: 1.48;
-  padding: 16px 18px;
+#coordination.studio-overview .studio-overview-note p {
+  margin: 0;
+}
+
+#coordination.studio-overview .studio-overview-note p + p {
+  border-top: 1px solid #eccfd5;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+#coordination.studio-overview .studio-overview-note a {
+  color: #8f2438;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#coordination.studio-overview .studio-overview-note a:hover {
+  color: #5f1725;
 }
 
 #coordination.studio-course-outline .studio-kicker {
@@ -2314,6 +2408,10 @@ Secondary Speakers Section
     padding: 50px 7% 30px;
   }
 
+  #coordination.studio-overview {
+    padding: 54px 7% 50px;
+  }
+
   .studio-grid.two-col {
     grid-template-columns: 1fr;
   }
@@ -2324,6 +2422,32 @@ Secondary Speakers Section
 
   .studio-span-two {
     grid-column: auto;
+  }
+
+  #coordination.studio-overview .studio-overview-intro-grid {
+    margin-bottom: 48px;
+  }
+
+  #coordination.studio-overview .studio-subsection {
+    margin-top: 48px;
+  }
+
+  #coordination.studio-overview .studio-overview-card {
+    padding: 22px 20px;
+  }
+
+  #coordination.studio-overview .studio-fact {
+    gap: 10px;
+    grid-template-columns: 82px minmax(0, 1fr);
+  }
+
+  #coordination.studio-overview .studio-applied-topics {
+    border-radius: 12px;
+    padding: 30px 18px 18px;
+  }
+
+  #coordination.studio-overview .studio-overview-note {
+    padding: 22px 20px;
   }
 
   .studio-table th,
