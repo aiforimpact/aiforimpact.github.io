@@ -2315,7 +2315,7 @@ Secondary Speakers Section
   align-items: start;
   display: grid;
   gap: 14px;
-  grid-template-columns: 92px minmax(0, 1fr);
+  grid-template-columns: 112px minmax(0, 1fr);
   padding: 11px 0;
 }
 
@@ -2670,7 +2670,7 @@ Secondary Speakers Section
 
   #coordination.studio-overview .studio-fact {
     gap: 10px;
-    grid-template-columns: 82px minmax(0, 1fr);
+    grid-template-columns: 104px minmax(0, 1fr);
   }
 
   #coordination.studio-overview .studio-applied-topics {
