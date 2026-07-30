@@ -987,6 +987,63 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #A31F34;
 }
 
+#intro .semester-hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro .semester-archive {
+  margin-top: 2px;
+  color: #A31F34;
+}
+
+#intro .semester-archive summary {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#intro .semester-archive summary::-webkit-details-marker {
+  display: none;
+}
+
+#intro .semester-archive summary::after {
+  content: " +";
+}
+
+#intro .semester-archive[open] summary::after {
+  content: " −";
+}
+
+#intro .semester-archive-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  max-width: 640px;
+  margin: 14px auto 0;
+}
+
+#intro .semester-archive-links a {
+  color: #A31F34;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(163, 31, 52, 0.4);
+}
+
+#intro .semester-archive-links a:hover,
+#intro .semester-archive-links a:focus {
+  color: #191919;
+  border-bottom-color: #191919;
+}
+
 #tracks .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
