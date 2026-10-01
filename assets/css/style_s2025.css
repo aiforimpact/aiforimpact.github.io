@@ -378,7 +378,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.nav-menu .menu-active a, .nav-menu a:hover {
+/* Dark active/hover text is only for the light top-level header. */
+.nav-menu > li.menu-active > a, .nav-menu > li > a:hover {
   color: #191919;
 }
 
