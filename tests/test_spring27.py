@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSfAITZkiQE--t7hHN9d2XzLwZrGyDJy0zrLsUDTYHz-ZHQ_1A/viewform'
 
 class Page(HTMLParser):
     def __init__(self, text):
@@ -43,7 +44,7 @@ class Spring27Tests(unittest.TestCase):
         index = (ROOT / 'index.html').read_text()
         self.assertIn('Explore Fall 2026', index)
 
-    def test_upcoming_term_has_staged_admissions_and_no_old_term_resources(self):
+    def test_upcoming_term_has_its_own_application_and_no_old_term_resources(self):
         path = ROOT / 'spring27.html'
         self.assertTrue(path.exists(), 'Spring 2027 needs a dedicated page')
         source = path.read_text()
@@ -51,9 +52,9 @@ class Spring27Tests(unittest.TestCase):
         text = ' '.join(page.words)
         self.assertIn('AI Studio | Spring 2027', source)
         self.assertIn('Step 1', text)
-        self.assertFalse(any('docs.google.com/forms/' in href for href in page.hrefs))
-        self.assertIn('Step 1 opens soon', text)
-        self.assertIn('Applications are not open yet', text)
+        self.assertEqual([href for href in page.hrefs if 'docs.google.com/forms/' in href], [FORM])
+        self.assertIn('Step 1 is open', text)
+        self.assertNotIn('Applications are not open yet', text)
         self.assertNotIn('1FAIpQLSda4gTkdJINbIhc_TLhQaGgtHSQwxC6pqAB6o55_FvcUc74dQ', source)
         self.assertIn('Step 1 alone does not complete', text)
         self.assertIn('Step 2', text)
