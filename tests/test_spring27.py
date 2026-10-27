@@ -20,9 +20,12 @@ class Page(HTMLParser):
     def handle_data(self, data): self.words.append(data)
 
 class Spring27Tests(unittest.TestCase):
-    def test_homepage_links_to_spring_without_replacing_current_fall(self):
+    def test_spring_stays_unlinked_without_replacing_current_fall(self):
         page = Page((ROOT / 'index.html').read_text())
-        self.assertIn('spring27.html', page.hrefs)
+        self.assertNotIn('spring27.html', page.hrefs)
+        for path in ROOT.glob('*.html'):
+            if path.name != 'spring27.html':
+                self.assertFalse(any('spring27.html' in href for href in Page(path.read_text()).hrefs), path.name)
         self.assertTrue(any(x in page.hrefs for x in ('fall26.html', './fall26.html')))
 
     def test_unconfirmed_spring_arrangements_are_provisional(self):
@@ -39,7 +42,6 @@ class Spring27Tests(unittest.TestCase):
             self.assertNotRegex(section, r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+(?:&nbsp;)?\d')
             self.assertNotRegex(section, r'\b\d{1,2}[/-]\d{1,2}[/-]20\d{2}\b')
         index = (ROOT / 'index.html').read_text()
-        self.assertRegex(index, r'<nav id="nav-menu-container">[\s\S]*?href="spring27.html">Spring 2027 \(upcoming\)</a>')
         self.assertIn('Explore Fall 2026', index)
 
     def test_upcoming_term_has_its_own_application_and_no_old_term_resources(self):

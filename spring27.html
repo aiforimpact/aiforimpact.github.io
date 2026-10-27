@@ -34,6 +34,32 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style_s2025.css?v=20260823-1" rel="stylesheet">
 
+    <!-- Keep the upcoming semester hero readable on short and narrow screens. -->
+    <style>
+      .spring27-page #intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: 75vh;
+        padding: 180px 15px 60px;
+      }
+
+      .spring27-page #intro .intro-container {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        max-width: 1100px;
+        padding: 0;
+      }
+
+      @media (max-width: 991px) {
+        .spring27-page #intro {
+          padding: 110px 15px 48px;
+        }
+      }
+    </style>
+
     <!-- Flickity CSS File -->
     <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
 
@@ -93,7 +119,7 @@
               <li><a href="#background">Background</a></li>
             </ul>
           </li>
-          <li><a href="#">Past Semesters</a>
+          <li><a href="#">Other Semesters</a>
             <ul>
               <li><a href="fall26.html">Fall 2026</a></li>
               <li><a href="spring26.html">Spring 2026</a></li>
@@ -121,10 +147,6 @@
   <section id="intro">
     <div class="intro-container" data-aos-delay="100">
 
-
-
-
-
       <h1 class="studio-hero-title mb-2 pb-0">AI Studio</h1>
       <h2 class="studio-hero-subtitle mb-2 pb-0">From AI Agents to the Agentic Web</h2>
       <p class="studio-hero-description mb-3 pb-0">A hands-on MIT course for building AI agents and the infrastructure they need to work together.</p>
@@ -136,11 +158,6 @@
       <p id="sub-heading" class="studio-hero-codes mt-4 mb-1 pb-0" style="color: #777;"><span style="color: #A31F34;">MAS.665</span> / MAS.664 / EC.731 / IDS.865</p>
       <p class="studio-hero-note">Spring 2027 course numbers, schedule, and Canvas links will be confirmed. The overview below describes the planned course.</p>
 
-
-
-
-      <br>
-      <br>
     </div>
   </section><!-- End Intro Section -->
 
