@@ -20,13 +20,17 @@ class Page(HTMLParser):
     def handle_data(self, data): self.words.append(data)
 
 class Spring27Tests(unittest.TestCase):
-    def test_spring_stays_unlinked_without_replacing_current_fall(self):
-        page = Page((ROOT / 'index.html').read_text())
-        self.assertNotIn('spring27.html', page.hrefs)
-        for path in ROOT.glob('*.html'):
-            if path.name != 'spring27.html':
-                self.assertFalse(any('spring27.html' in href for href in Page(path.read_text()).hrefs), path.name)
-        self.assertTrue(any(x in page.hrefs for x in ('fall26.html', './fall26.html')))
+    def test_semester_menus_link_to_upcoming_spring_without_replacing_current_fall(self):
+        for name in ('index.html', 'fall26.html', 'spring26.html', 'fall25.html',
+                     'spring25.html', 'fall24.html', 'spring24.html', 'fall23.html', 'spring23.html'):
+            source = (ROOT / name).read_text()
+            nav = re.search(r'<nav id="nav-menu-container">[\s\S]*?</nav>', source)
+            self.assertIsNotNone(nav, name)
+            self.assertEqual(Page(nav.group()).hrefs.count('spring27.html'), 1, name)
+            self.assertIn('Spring 2027 (upcoming)', nav.group(), name)
+        index = (ROOT / 'index.html').read_text()
+        self.assertIn('Explore Fall 2026', index)
+        self.assertIn('Fall 2026 applications are closed', index)
 
     def test_unconfirmed_spring_arrangements_are_provisional(self):
         source = (ROOT / 'spring27.html').read_text()
@@ -35,7 +39,7 @@ class Spring27Tests(unittest.TestCase):
         self.assertNotIn('Teams receive mentor feedback', source)
         self.assertIn('Previous Course Team (Fall 2026)', source)
         self.assertIn('does not confirm Spring participation', source)
-        for section_id in ('admissions', 'schedule'):
+        for section_id in ('schedule',):
             match = re.search(r'<section id="' + section_id + r'".*?</section>', source, re.S)
             assert match is not None
             section = match.group()
