@@ -35,7 +35,7 @@ class Spring27Tests(unittest.TestCase):
     def test_unconfirmed_spring_team_and_format_are_provisional(self):
         source = (ROOT / 'spring27.html').read_text()
         self.assertIn('Spring 2027 course team will be announced', source)
-        self.assertIn('Planned course format', source)
+        self.assertIn('Course format:', source)
         self.assertNotIn('Teams receive mentor feedback', source)
         self.assertIn('Previous Course Team (Fall 2026)', source)
         self.assertIn('does not confirm Spring participation', source)
