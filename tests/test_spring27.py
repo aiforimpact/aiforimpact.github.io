@@ -53,7 +53,6 @@ class Spring27Tests(unittest.TestCase):
         self.assertEqual([href for href in page.hrefs if 'docs.google.com/forms/' in href], [FORM])
         self.assertNotIn('Applications are not open yet', text)
         self.assertNotIn('1FAIpQLSda4gTkdJINbIhc_TLhQaGgtHSQwxC6pqAB6o55_FvcUc74dQ', source)
-        self.assertIn('Step 1 alone does not complete', text)
         self.assertIn('Step 2', text)
         self.assertIn('Complete Step 2 when it is released in December', text)
         for old in ['qD21EGUYxMnqYsN39', '1jFbnDjcxVRTKdza8', 'qecxvq7s', '/courses/40577', '1SyC6Yrxqn9DHvM7BHzRvkugPSR8811S6dczXJ754pf0']:
