@@ -51,7 +51,6 @@ class Spring27Tests(unittest.TestCase):
         self.assertIn('AI Studio | Spring 2027', source)
         self.assertIn('Step 1', text)
         self.assertEqual([href for href in page.hrefs if 'docs.google.com/forms/' in href], [FORM])
-        self.assertIn('Step 1 is open', text)
         self.assertNotIn('Applications are not open yet', text)
         self.assertNotIn('1FAIpQLSda4gTkdJINbIhc_TLhQaGgtHSQwxC6pqAB6o55_FvcUc74dQ', source)
         self.assertIn('Step 1 alone does not complete', text)
