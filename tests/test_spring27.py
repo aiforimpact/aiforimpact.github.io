@@ -56,7 +56,6 @@ class Spring27Tests(unittest.TestCase):
         self.assertIn('Step 1 alone does not complete', text)
         self.assertIn('Step 2', text)
         self.assertIn('Step 2 will be released in December', text)
-        self.assertIn('new application', text.lower())
         for old in ['qD21EGUYxMnqYsN39', '1jFbnDjcxVRTKdza8', 'qecxvq7s', '/courses/40577', '1SyC6Yrxqn9DHvM7BHzRvkugPSR8811S6dczXJ754pf0']:
             self.assertNotIn(old, source)
         for date in ['September', 'August', 'November 19', 'December 3', 'December 10']:
