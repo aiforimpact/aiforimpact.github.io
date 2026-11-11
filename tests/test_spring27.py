@@ -20,27 +20,25 @@ class Page(HTMLParser):
     def handle_data(self, data): self.words.append(data)
 
 class Spring27Tests(unittest.TestCase):
-    def test_spring_stays_unlinked_without_replacing_current_fall(self):
-        page = Page((ROOT / 'index.html').read_text())
-        self.assertNotIn('spring27.html', page.hrefs)
-        for path in ROOT.glob('*.html'):
-            if path.name != 'spring27.html':
-                self.assertFalse(any('spring27.html' in href for href in Page(path.read_text()).hrefs), path.name)
-        self.assertTrue(any(x in page.hrefs for x in ('fall26.html', './fall26.html')))
+    def test_semester_menus_link_to_upcoming_spring_without_replacing_current_fall(self):
+        for name in ('index.html', 'fall26.html', 'spring26.html', 'fall25.html',
+                     'spring25.html', 'fall24.html', 'spring24.html', 'fall23.html', 'spring23.html'):
+            source = (ROOT / name).read_text()
+            nav = re.search(r'<nav id="nav-menu-container">[\s\S]*?</nav>', source)
+            self.assertIsNotNone(nav, name)
+            self.assertEqual(Page(nav.group()).hrefs.count('spring27.html'), 1, name)
+            self.assertIn('Spring 2027 (upcoming)', nav.group(), name)
+        index = (ROOT / 'index.html').read_text()
+        self.assertIn('Explore Fall 2026', index)
+        self.assertIn('Fall 2026 applications are closed', index)
 
-    def test_unconfirmed_spring_arrangements_are_provisional(self):
+    def test_spring_course_team_matches_fall_and_format_is_described(self):
         source = (ROOT / 'spring27.html').read_text()
-        self.assertIn('Spring 2027 course team will be announced', source)
-        self.assertIn('Planned course format', source)
+        self.assertIn('Course format:', source)
         self.assertNotIn('Teams receive mentor feedback', source)
-        self.assertIn('Previous Course Team (Fall 2026)', source)
-        self.assertIn('does not confirm Spring participation', source)
-        for section_id in ('admissions', 'schedule'):
-            match = re.search(r'<section id="' + section_id + r'".*?</section>', source, re.S)
-            assert match is not None
-            section = match.group()
-            self.assertNotRegex(section, r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+(?:&nbsp;)?\d')
-            self.assertNotRegex(section, r'\b\d{1,2}[/-]\d{1,2}[/-]20\d{2}\b')
+        self.assertIn('<h2 style="color: #191919">Course Team</h2>', source)
+        self.assertNotIn('Previous Course Team', source)
+        self.assertIn('Spring 2027 mentors and speakers will be announced', source)
         index = (ROOT / 'index.html').read_text()
         self.assertIn('Explore Fall 2026', index)
 
@@ -53,13 +51,10 @@ class Spring27Tests(unittest.TestCase):
         self.assertIn('AI Studio | Spring 2027', source)
         self.assertIn('Step 1', text)
         self.assertEqual([href for href in page.hrefs if 'docs.google.com/forms/' in href], [FORM])
-        self.assertIn('Step 1 is open', text)
         self.assertNotIn('Applications are not open yet', text)
         self.assertNotIn('1FAIpQLSda4gTkdJINbIhc_TLhQaGgtHSQwxC6pqAB6o55_FvcUc74dQ', source)
-        self.assertIn('Step 1 alone does not complete', text)
         self.assertIn('Step 2', text)
-        self.assertIn('to be announced', text.lower())
-        self.assertIn('new application', text.lower())
+        self.assertIn('Complete Step 2 when it is released in December', text)
         for old in ['qD21EGUYxMnqYsN39', '1jFbnDjcxVRTKdza8', 'qecxvq7s', '/courses/40577', '1SyC6Yrxqn9DHvM7BHzRvkugPSR8811S6dczXJ754pf0']:
             self.assertNotIn(old, source)
         for date in ['September', 'August', 'November 19', 'December 3', 'December 10']:
