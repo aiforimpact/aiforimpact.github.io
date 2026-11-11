@@ -55,7 +55,7 @@ class Spring27Tests(unittest.TestCase):
         self.assertNotIn('1FAIpQLSda4gTkdJINbIhc_TLhQaGgtHSQwxC6pqAB6o55_FvcUc74dQ', source)
         self.assertIn('Step 1 alone does not complete', text)
         self.assertIn('Step 2', text)
-        self.assertIn('Step 2 instructions will be announced', text)
+        self.assertIn('Step 2 will be released in December', text)
         self.assertIn('new application', text.lower())
         for old in ['qD21EGUYxMnqYsN39', '1jFbnDjcxVRTKdza8', 'qecxvq7s', '/courses/40577', '1SyC6Yrxqn9DHvM7BHzRvkugPSR8811S6dczXJ754pf0']:
             self.assertNotIn(old, source)
