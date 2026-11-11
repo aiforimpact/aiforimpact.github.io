@@ -32,13 +32,13 @@ class Spring27Tests(unittest.TestCase):
         self.assertIn('Explore Fall 2026', index)
         self.assertIn('Fall 2026 applications are closed', index)
 
-    def test_unconfirmed_spring_team_and_format_are_provisional(self):
+    def test_spring_course_team_matches_fall_and_format_is_described(self):
         source = (ROOT / 'spring27.html').read_text()
-        self.assertIn('Spring 2027 course team will be announced', source)
         self.assertIn('Course format:', source)
         self.assertNotIn('Teams receive mentor feedback', source)
-        self.assertIn('Previous Course Team (Fall 2026)', source)
-        self.assertIn('does not confirm Spring participation', source)
+        self.assertIn('<h2 style="color: #191919">Course Team</h2>', source)
+        self.assertNotIn('Previous Course Team', source)
+        self.assertIn('Spring 2027 mentors and speakers will be announced', source)
         index = (ROOT / 'index.html').read_text()
         self.assertIn('Explore Fall 2026', index)
 
