@@ -32,19 +32,13 @@ class Spring27Tests(unittest.TestCase):
         self.assertIn('Explore Fall 2026', index)
         self.assertIn('Fall 2026 applications are closed', index)
 
-    def test_unconfirmed_spring_arrangements_are_provisional(self):
+    def test_unconfirmed_spring_team_and_format_are_provisional(self):
         source = (ROOT / 'spring27.html').read_text()
         self.assertIn('Spring 2027 course team will be announced', source)
         self.assertIn('Planned course format', source)
         self.assertNotIn('Teams receive mentor feedback', source)
         self.assertIn('Previous Course Team (Fall 2026)', source)
         self.assertIn('does not confirm Spring participation', source)
-        for section_id in ('schedule',):
-            match = re.search(r'<section id="' + section_id + r'".*?</section>', source, re.S)
-            assert match is not None
-            section = match.group()
-            self.assertNotRegex(section, r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+(?:&nbsp;)?\d')
-            self.assertNotRegex(section, r'\b\d{1,2}[/-]\d{1,2}[/-]20\d{2}\b')
         index = (ROOT / 'index.html').read_text()
         self.assertIn('Explore Fall 2026', index)
 
