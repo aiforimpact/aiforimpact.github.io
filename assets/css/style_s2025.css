@@ -1952,6 +1952,32 @@ Secondary Speakers Section
   margin-top: 18px!important;
 }
 
+.fall26-page #intro .studio-hero-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  justify-content: center;
+}
+
+.fall26-page #intro .studio-hero-resources a {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.fall26-page #intro .studio-hero-resources a:hover,
+.fall26-page #intro .studio-hero-resources a:focus-visible {
+  color: #A31F34;
+}
+
+.fall26-page #intro .studio-hero-resources a:focus-visible {
+  outline: 2px solid #A31F34;
+  outline-offset: 4px;
+}
+
 @media (max-width: 991px) {
   #intro .studio-hero-title {
     font-size: 38px;
